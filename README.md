@@ -1,2 +1,13 @@
 # Work-stuff
-A project I was asked to do to generate a visual representation of real job data to assist in picking a new ware house location.  I was asked to keep it basic so I made a basic heat map to show the concentration of jobs, and then a separate map to isolate actual jobs versus ones that didn't develop.
+A brief overview of the technologies used are: Python, more specifically folium, geocoder, numpy, pandas, as well as a few other libraries.
+The report was generated in DASH, cleaned with python, and translated into a CSV through our coordinate finding script for better layout 
+in a pandas dataframe.
+
+This assignment was given to me by the VP of Project management, and estimating.  The instructions were to pull the information from
+an internal software we use from NextGear solutions, and generate useable data from it's reporting system.  I wrote a python script to
+iterate over the address column, and write two new columns for lattitude and longitude to plot these as blips on a map.
+I tried a few different geocoding api's prior to selecting one.  
+
+Unfortunately, a little less than 1/3 of all the addresses did not populate a gps coordinate that was plotable.  Due to this 
+data being crucial to the goal of the assignment, I populated the vacant fields manually.  I was able to achieve the desired result,
+and present this on a one slide presentation that did influence the location of the new warehouse ultimately.
